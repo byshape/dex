@@ -19,7 +19,7 @@ describe("DEX", function () {
   };
 
   const divisionAccuracy: BigNumber = process.env.DIVISION_ACCURACY !== undefined ? BigNumber.from(process.env.DIVISION_ACCURACY): BigNumber.from(1e5);
-  const ownerFee: BigNumber = process.env.OWNER_FEE !== undefined ? BigNumber.from(process.env.OWNER_FEE) : BigNumber.from(50 * 1e16); // 50%
+  const ownerFee: BigNumber = process.env.OWNER_FEE !== undefined ? BigNumber.from(process.env.OWNER_FEE) : BigNumber.from("500000000000000000"); // 50%
 
   let dex: DEX;
   let testSellerFactory: TestSeller__factory;

@@ -26,6 +26,11 @@ npm install --save-dev
 
 When installation process is finished, create `.env` file from `.env.example` and set `API_URL`, `PRIVATE_KEY` and `ETHERSCAN_API_KEY` variables there to be able to deploy the contracts to Rinkeby testnet.
 
+Compile project and generate typings:
+```shell
+npx hardhat typechain
+```
+
 Start local node with deployed DEX and ERC20 token contracts:
 ```shell
 npx hardhat node
